@@ -1,0 +1,188 @@
+
+/* Resetar as Configurações Iniciais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* Variaveis de Cores */
+:root{
+    --text:#000000;
+    --radius: 12px
+    --blur:blur(10px)
+}
+
+
+/*Cabeçalho do Site*/
+header{
+
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    background-image:url(Captura\ de\ tela\ 2026-03-17\ 105746.png);
+    background-size: cover;
+    border-radius: 50px;
+    
+
+}
+
+/*Os links e a logo em geral*/
+.nav{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center; 
+}
+
+/*Apenas a Logo*/
+.logo{
+    font-weight: bold;
+    font-size: 1.59rem;
+    color: (var(--text));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Os links*/
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.95rem;
+    transition: 0.3s;
+    
+}
+
+
+.menu a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*O Corpo do Texto*/
+body{
+    background-image: url(Captura\ de\ tela\ 2026-03-11\ 080413.png);
+    background-size: cover;
+    padding-top: 3rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto;
+    color: var(--text);
+    line-height: 1.6;
+
+}
+
+
+/* primeiro conteudo */
+.hero{
+    text-align: center;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 2.6px;
+}
+
+.hero-content{
+    max-width: 600px;
+}
+
+
+/* título */
+.hero h1{
+    font-size: 2.5rem;
+    padding-bottom: 2.4rem;
+    background: linear-gradient(90deg, rgb(22, 61, 12), rgb(0, 0, 0));
+    background-clip: var(--text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragrafo inicial */
+.hero p{
+    margin-bottom: 2.5rem;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(24, 95, 187));
+    background-clip: var(--text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* botão de "compre agora" */
+.hero a{
+    display: inline-block;
+    color: var(--text);
+    margin-bottom: 1rem;
+    padding: 8px 30px;
+    text-decoration: none;
+    background-color: rgb(98, 182, 98);
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero a:hover{
+    color: white;
+}
+
+/* produtos */
+.produc{
+    padding-top: 4.9rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+/* titulo dos produtos */
+.produc h2{
+    padding-bottom: 4rem;
+    font-size: 35px;
+}
+
+/* os produtos em cartões */
+.grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: antiquewhite;
+    width: 360px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 25px;
+    transition: 3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+
+/* botões de adicionar ao carrinho */
+.produc a{
+display: inline-block;
+    color: var(--text);
+    margin-bottom: 1rem;
+    padding: 8px 30px;
+    text-decoration: none;
+    background-color: rgb(98, 182, 98);
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.produc a:hover{
+    color: white;
+    transform: translateY(-4px);
+}
